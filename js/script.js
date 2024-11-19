@@ -74,3 +74,18 @@ function clearForm(e) {
   customerName.value = '';
   resolve.value = 'resolved';
 }
+
+// PROBING QUESTIONS
+
+//Variables
+
+const bankFeed = document.querySelector('#bankFeed');
+const billingCharge = document.querySelector('#billingCharge');
+const multiUser = document.querySelector('#multiUser');
+const singleUser = document.querySelector('#singleUser');
+const loginIssue = document.querySelector('#loginIssue');
+const onlineBanking = document.querySelector('#onlineBanking');
+const recon = document.querySelector('#recon');
+const report = document.querySelector('#report');
+const saleTran = document.querySelector('#saleTran');
+const sub = document.querySelector('#sub');
