@@ -50,113 +50,117 @@
       </ul>
     </header>
     <!-- ----------------------------- END HEADER ------------------------------ -->
-    <div class="container">
-      <h1
-        id="caseNotes"
-        class="text-center"
-      >
-        Case Notes
-      </h1>
-      <form class="w-50 m-auto">
-        <fieldset class="border border-primary">
-          <div class="form-group mb-3">
-            <label
-              for="license"
-              class="form-label"
-              >What is the license number?</label
-            >
-            <div class="input-group">
+    <section id="caseNotes">
+      <div class="container">
+        <h1 class="text-center">Case Notes</h1>
+        <form class="w-50 m-auto">
+          <fieldset class="border border-primary">
+            <div class="form-group mb-3">
+              <label
+                for="license"
+                class="form-label"
+                >What is the license number?</label
+              >
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="license"
+                />
+                <button
+                  id="passCopy"
+                  class="btn btn-primary"
+                >
+                  Copy
+                </button>
+              </div>
+            </div>
+            <div class="form-group mb-3">
+              <label
+                for="customerName"
+                class="form-label"
+                >Customer Name</label
+              >
               <input
                 type="text"
                 class="form-control"
-                id="license"
+                id="customerName"
               />
-              <button
-                id="passCopy"
-                class="btn btn-primary"
-              >
-                Copy
-              </button>
             </div>
-          </div>
-          <div class="form-group mb-3">
-            <label
-              for="customerName"
-              class="form-label"
-              >Customer Name</label
+          </fieldset>
+          <fieldset>
+            <div class="form-group mb-3">
+              <label
+                for="summary"
+                class="form-label"
+                >Write a brief summary of why the customer called in.</label
+              >
+              <textarea
+                class="form-control"
+                id="summary"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-group mb-3">
+              <label
+                for="action"
+                class="form-label"
+                >What actions did you take?</label
+              >
+              <textarea
+                class="form-control"
+                id="action"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-group mb-3">
+              <label
+                for="resource"
+                class="form-label"
+                >What resources did you use?</label
+              >
+              <textarea
+                class="form-control"
+                id="resource"
+                rows="3"
+              ></textarea>
+            </div>
+            <div class="form-group mb-3">
+              <label
+                for="resolve"
+                class="form-label"
+                >Did you resolve the Issue?</label
+              >
+              <select
+                id="resolve"
+                class="form-select"
+              >
+                <option>Resolved</option>
+                <option>Unresolved - Cx will call back</option>
+                <option>Unresolved - Cx will DIY</option>
+                <option>Did not support</option>
+              </select>
+            </div>
+          </fieldset>
+          <div class="d-flex btn-group">
+            <button
+              type="submit"
+              id="promptCopy"
+              class="btn btn-primary m-auto"
             >
-            <input
-              type="text"
-              class="form-control"
-              id="customerName"
-            />
-          </div>
-        </fieldset>
-        <fieldset>
-          <div class="form-group mb-3">
-            <label
-              for="summary"
-              class="form-label"
-              >Write a brief summary of why the customer called in.</label
+              Submit
+            </button>
+            <button
+              type="submit"
+              id="clear"
+              class="btn btn-primary m-auto"
             >
-            <textarea
-              class="form-control"
-              id="summary"
-              rows="3"
-            ></textarea>
+              Clear
+            </button>
           </div>
-          <div class="form-group mb-3">
-            <label
-              for="action"
-              class="form-label"
-              >What actions did you take?</label
-            >
-            <textarea
-              class="form-control"
-              id="action"
-              rows="3"
-            ></textarea>
-          </div>
-          <div class="form-group mb-3">
-            <label
-              for="resource"
-              class="form-label"
-              >What resources did you use?</label
-            >
-            <textarea
-              class="form-control"
-              id="resource"
-              rows="3"
-            ></textarea>
-          </div>
-          <div class="form-group mb-3">
-            <label
-              for="resolve"
-              class="form-label"
-              >Did you resolve the Issue?</label
-            >
-            <select
-              id="resolve"
-              class="form-select"
-            >
-              <option>Resolved</option>
-              <option>Unresolved - Cx will call back</option>
-              <option>Unresolved - Cx will DIY</option>
-              <option>Did not support</option>
-            </select>
-          </div>
-        </fieldset>
-        <div class="d-grid">
-          <button
-            type="submit"
-            id="promptCopy"
-            class="btn btn-primary"
-          >
-            Submit
-          </button>
-        </div>
-      </form>
-    </div>
+        </form>
+      </div>
+    </section>
     <!-- ------------------------------- FOOTER -------------------------------- -->
     <footer class="py-3 my-4">
       <ul class="nav justify-content-center border-bottom pb-3 mb-3">

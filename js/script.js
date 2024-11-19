@@ -15,22 +15,17 @@ const summary = document.querySelector('#summary');
 const action = document.querySelector('#action');
 const resource = document.querySelector('#resource');
 const resolve = document.querySelector('#resolve');
-const promptCopyBtn = document.querySelector('#promptCopy');
-promptCopyBtn.addEventListener('click', promptCopy);
-
-let summaryValue = '';
-let actionValue = '';
-let resourceValue = '';
-let resolveValue = '';
+const promptCopy = document.querySelector('#promptCopy');
+promptCopy.addEventListener('click', promptCreate);
 
 // Copy license text to clipboard
-function promptCopy(e) {
+function promptCreate(e) {
   e.preventDefault();
 
-  summaryValue = summary.value;
-  actionValue = action.value;
-  resourceValue = resource.value;
-  resolveValue = resolve.options[resolve.selectedIndex].text;
+  let summaryValue = summary.value;
+  let actionValue = action.value;
+  let resourceValue = resource.value;
+  let resolveValue = resolve.options[resolve.selectedIndex].text;
   clipBoard(summaryValue, actionValue, resourceValue, resolveValue);
 }
 
