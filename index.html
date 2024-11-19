@@ -95,22 +95,6 @@
         <fieldset>
           <div class="form-group mb-3">
             <label
-              for="resolve"
-              class="form-label"
-              >Did you resolve the Issue?</label
-            >
-            <select
-              id="resolve"
-              class="form-select"
-            >
-              <option>Resolved</option>
-              <option>Unresolved - Cx will call back</option>
-              <option>Unresolved - Cx will DIY</option>
-              <option>Did not support</option>
-            </select>
-          </div>
-          <div class="form-group mb-3">
-            <label
               for="summary"
               class="form-label"
               >Write a brief summary of why the customer called in.</label
@@ -145,10 +129,27 @@
               rows="3"
             ></textarea>
           </div>
+          <div class="form-group mb-3">
+            <label
+              for="resolve"
+              class="form-label"
+              >Did you resolve the Issue?</label
+            >
+            <select
+              id="resolve"
+              class="form-select"
+            >
+              <option>Resolved</option>
+              <option>Unresolved - Cx will call back</option>
+              <option>Unresolved - Cx will DIY</option>
+              <option>Did not support</option>
+            </select>
+          </div>
         </fieldset>
         <div class="d-grid">
           <button
             type="submit"
+            id="promptCopy"
             class="btn btn-primary"
           >
             Submit
