@@ -1,13 +1,12 @@
 // LICENSE
-const password = document.querySelector('#license');
-const passCopy = document.querySelector('#passCopy');
-passCopy.addEventListener('click', passwordCopy);
+const license = document.querySelector('#license');
+const licenseCopy = document.querySelector('#licenseCopy');
+licenseCopy.addEventListener('click', licCopy);
 
 // Copy license text to clipboard
-function passwordCopy(e) {
+function licCopy(e) {
   e.preventDefault();
-  let passValue = password.value;
-  navigator.clipboard.writeText(passValue);
+  navigator.clipboard.writeText(license.value);
 }
 
 // PROMPT BUILD
@@ -58,4 +57,20 @@ Was it resolved: ${resolve}
 `;
 
   navigator.clipboard.writeText(prompt);
+}
+
+//CLEAR FORM
+const customerName = document.querySelector('#customerName');
+const clear = document.querySelector('#clear');
+clear.addEventListener('click', clearForm);
+
+function clearForm(e) {
+  e.preventDefault();
+
+  license.value = '';
+  summary.value = '';
+  action.value = '';
+  resource.value = '';
+  customerName.value = '';
+  resolve.value = 'resolved';
 }
