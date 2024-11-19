@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Case Notes</title>
+    <link
+      rel="stylesheet"
+      href="css/fontawesome.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/main.css"
+    />
+  </head>
+  <body>
+    <!-- ------------------------------- HEADER -------------------------------- -->
+    <header class="d-flex justify-content-center py-3">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a
+            href="#caseNotes"
+            class="nav-link active"
+            aria-current="page"
+            >Case Notes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link"
+            >Follow Up Questions</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://docs.google.com/document/d/1-TvgZ7vZxfaNBE5f4_6swmoTHDojI0U7Bb6qhkgx6AI/edit?usp=drive_link"
+            target="_blank"
+            class="nav-link"
+            >Script</a
+          >
+        </li>
+      </ul>
+    </header>
+    <!-- ----------------------------- END HEADER ------------------------------ -->
+    <div class="container">
+      <h1
+        id="caseNotes"
+        class="text-center"
+      >
+        Case Notes
+      </h1>
+      <form class="w-50 m-auto">
+        <fieldset class="border border-primary">
+          <div class="form-group mb-3">
+            <label
+              for="license"
+              class="form-label"
+              >What is the license number?</label
+            >
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                id="license"
+              />
+              <button class="btn btn-primary">Copy</button>
+            </div>
+          </div>
+          <div class="form-group mb-3">
+            <label
+              for="customerName"
+              class="form-label"
+              >Customer Name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="customerName"
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div class="form-group mb-3">
+            <label
+              for="resolve"
+              class="form-label"
+              >Did you resolve the Issue?</label
+            >
+            <select
+              id="resolve"
+              class="form-select"
+            >
+              <option>Resolved</option>
+              <option>Unresolved - Cx will call back</option>
+              <option>Unresolved - Cx will DIY</option>
+              <option>Did not support</option>
+            </select>
+          </div>
+          <div class="form-group mb-3">
+            <label
+              for="summary"
+              class="form-label"
+              >Write a brief summary of why the customer called in.</label
+            >
+            <textarea
+              class="form-control"
+              id="summary"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="form-group mb-3">
+            <label
+              for="action"
+              class="form-label"
+              >What actions did you take?</label
+            >
+            <textarea
+              class="form-control"
+              id="action"
+              rows="3"
+            ></textarea>
+          </div>
+          <div class="form-group mb-3">
+            <label
+              for="resource"
+              class="form-label"
+              >What resources did you use?</label
+            >
+            <textarea
+              class="form-control"
+              id="resource"
+              rows="3"
+            ></textarea>
+          </div>
+        </fieldset>
+        <div class="d-grid">
+          <button
+            type="submit"
+            class="btn btn-primary"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+    <!-- ------------------------------- FOOTER -------------------------------- -->
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item">
+          <a
+            href="#caseNotes"
+            class="nav-link px-2 text-body-secondary"
+            >Case Notes</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="#"
+            class="nav-link px-2 text-body-secondary"
+            >Follow Up Questions</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            href="https://docs.google.com/document/d/1-TvgZ7vZxfaNBE5f4_6swmoTHDojI0U7Bb6qhkgx6AI/edit?usp=drive_link"
+            target="_blank"
+            class="nav-link px-2 text-body-secondary"
+            >Script</a
+          >
+        </li>
+      </ul>
+      <p class="text-center text-body-secondary">© 2024 Company, Inc</p>
+    </footer>
+    <!-- -------------------------- EXTERNAL SCRIPTS --------------------------- -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
