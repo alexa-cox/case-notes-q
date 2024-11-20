@@ -78,14 +78,33 @@ function clearForm(e) {
 // PROBING QUESTIONS
 
 //Variables
+const categories = [
+  document.querySelector('#bankFeed'),
+  document.querySelector('#billingCharge'),
+  document.querySelector('#multiUser'),
+  document.querySelector('#singleUser'),
+  document.querySelector('#loginIssue'),
+  document.querySelector('#onlineBanking'),
+  document.querySelector('#recon'),
+  document.querySelector('#report'),
+  document.querySelector('#saleTran'),
+  document.querySelector('#sub'),
+];
 
-const bankFeed = document.querySelector('#bankFeed');
-const billingCharge = document.querySelector('#billingCharge');
-const multiUser = document.querySelector('#multiUser');
-const singleUser = document.querySelector('#singleUser');
-const loginIssue = document.querySelector('#loginIssue');
-const onlineBanking = document.querySelector('#onlineBanking');
-const recon = document.querySelector('#recon');
-const report = document.querySelector('#report');
-const saleTran = document.querySelector('#saleTran');
-const sub = document.querySelector('#sub');
+// Add event listeners to all categories
+categories.forEach((category) => {
+  category.addEventListener('click', adjustRight);
+});
+
+function adjustRight(event) {
+  const clickedId = event.target.id;
+
+  //hide all divs
+  for (let i = 0; i < 10; i++) {
+    document.querySelector(`#${categories[i].id}Div`).classList.add('d-none');
+  }
+
+  //Show correct div
+  document.querySelector(`#${clickedId}Div`).classList.remove('d-none');
+  document.querySelector(`#${clickedId}Div`).classList.add('d-block');
+}
