@@ -54,6 +54,8 @@ Resources used:
 ${resourse}
 
 Was it resolved: ${resolve}
+
+Keep it short and accurate.
 `;
 
   navigator.clipboard.writeText(prompt);
